@@ -18,3 +18,9 @@ tasks.test {
     useJUnitPlatform()
     finalizedBy("aggregate")
 }
+
+tasks.register<Copy>("copyReport") {
+    dependsOn("aggregate")
+    from("target/site/serenity")
+    into("docs")
+}
