@@ -22,9 +22,7 @@ public class UsersSteps extends BaseSteps {
     public void verifyEveryUserHasAddressWithCity(Response response) {
         List<User> users = response.jsonPath().getList(".", User.class);
 
-        users.forEach(user -> {
-            assertNotNull(user.getAddress().getCity());
-        });
+        users.forEach(user -> assertNotNull(user.getAddress().getCity()));
     }
 
     @Step("Fetch user by parameter")

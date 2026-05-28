@@ -17,23 +17,7 @@ public class Address {
         this.geo = geo;
     }
 
-    public String getStreet() {
-        return street;
-    }
-
-    public String getSuite() {
-        return suite;
-    }
-
     public String getCity() {
         return city;
-    }
-
-    public String getZipcode() {
-        return zipcode;
-    }
-
-    public Geo getGeo() {
-        return geo;
     }
 }
