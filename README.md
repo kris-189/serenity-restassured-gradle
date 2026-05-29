@@ -1,5 +1,4 @@
 # Testing Assignment for Backend API
-___
 Project using tools like: Java, Gradle, Serenity BDD, RestAssured and JUnit5
 
 ## Start project locally:
