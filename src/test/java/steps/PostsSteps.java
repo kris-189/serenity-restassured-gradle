@@ -1,5 +1,6 @@
 package steps;
 
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import models.Post;
 import net.serenitybdd.annotations.Step;
@@ -26,13 +27,8 @@ public class PostsSteps extends BaseSteps{
 
     @Step("Verify each post has required fields (id, userId, title, body)")
     public void verifyPostsHaveRequiredFields(Response response) {
-        List<Post> posts = response.jsonPath().getList(".", Post.class);
-        posts.forEach(post -> {
-            assertNotNull(post.getId());
-            assertNotNull(post.getUserId());
-            assertNotNull(post.getTitle());
-            assertNotNull(post.getBody());
-        });
+        response.then()
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("jsonSchemas/posts-schema.json"));
     }
 
     @Step("Request post with id {0}")
