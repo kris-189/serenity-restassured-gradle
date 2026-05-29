@@ -16,7 +16,7 @@ public class PostTests extends BaseTest {
 
     @Test
     @DisplayName("Fetch all posts and verify status code, number of posts and required fields")
-    public void fetchAllPosts() {
+    public void getAllPosts() {
         Response response = postsSteps.getAllPosts();
         postsSteps.verifyStatusCode(response, 200);
         postsSteps.verifyPostCount(response, 100);
@@ -25,7 +25,7 @@ public class PostTests extends BaseTest {
 
     @Test
     @DisplayName("Fetch single post and verify status code, post ID and if title is not null")
-    public void fetchSinglePost() {
+    public void getSinglePost() {
         Response response = postsSteps.getPostById(1);
         postsSteps.verifyStatusCode(response, 200);
         postsSteps.verifyPostId(response, 1);
@@ -34,7 +34,7 @@ public class PostTests extends BaseTest {
 
     @Test
     @DisplayName("Try to fetch non-existent post and verify status code")
-    public void fetchNonExistentPost() {
+    public void getNonExistentPost() {
         Response response = postsSteps.getPostById(9999);
         postsSteps.verifyStatusCode(response, 404);
     }

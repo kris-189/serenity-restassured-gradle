@@ -19,7 +19,7 @@ public class UsersSteps extends BaseSteps {
     }
 
     @Step("Verify each user has city in address")
-    public void verifyEveryUserHasAddressWithCity(Response response) {
+    public void verifyEveryUserHasCityInAddress(Response response) {
         List<User> users = response.jsonPath().getList(".", User.class);
 
         users.forEach(user -> assertNotNull(user.getAddress().getCity()));

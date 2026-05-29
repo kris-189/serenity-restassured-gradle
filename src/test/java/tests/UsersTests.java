@@ -19,7 +19,7 @@ public class UsersTests extends BaseTest {
     public void getUsers() {
         Response response = usersSteps.getUsers();
         usersSteps.verifyStatusCode(response, 200);
-        usersSteps.verifyEveryUserHasAddressWithCity(response);
+        usersSteps.verifyEveryUserHasCityInAddress(response);
     }
 
     @Test
