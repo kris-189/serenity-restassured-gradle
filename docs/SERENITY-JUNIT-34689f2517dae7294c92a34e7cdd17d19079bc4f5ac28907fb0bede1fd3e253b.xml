@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="tests.UsersTests" skipped="0" tests="1" time="0.2" timestamp="2026-05-29 01:01:03"><testcase classname="tests.UsersTests" name="Fetch user by parameter"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="tests.UsersTests" skipped="0" tests="1" time="0.21" timestamp="2026-05-29 10:58:56"><testcase classname="tests.UsersTests" name="Fetch user by parameter"/></testsuite>

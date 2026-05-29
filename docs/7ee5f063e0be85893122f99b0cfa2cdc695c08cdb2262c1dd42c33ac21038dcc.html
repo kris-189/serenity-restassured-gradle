@@ -121,6 +121,14 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
+ <!-- inflection.of(breadcrumb.displayName).asATitle()-->
+            > <a href="aa64d1fb3410f26137847d2116cc6cfd1d1d3a5546c4d30389c1411104d82be8.html">
+            Tests
+        </a>
+ <!-- inflection.of(breadcrumb.displayName).asATitle()-->
+            > <a href="d950324d893678206e6ba4731c15f07b131cf2e0747d8e26cf44a16e82002ff1.html">
+            REST API tests for posts endpoints
+        </a>
         >
             Create new post and verify status code, title
         </span>
@@ -146,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 29-05-2026 01:01</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 29-05-2026 10:58</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -160,9 +168,10 @@
                         <td>
                                 <div>
                                     <h3 class="discreet-story-header">
-                                        <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
-                                        <span class="story-header-title">REST API Tests For Posts Endpoints</span>
+                                        <i class="fs-2 bi bi-chat-left-quote title-icon"></i>
+                                        <span class="story-header-title">REST API Tests For Posts Endpoints </span>
                                     </h3>
+
                                 </div>
 
                         </td>
@@ -252,7 +261,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">435ms</span></td>
+                    <td width="100"><span class="top-level-step">283ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -289,11 +298,11 @@
                                     <p>Status code: 201</p>
                                     <p>Content Type: application/json</p>
                                     <h4>Request Headers</h4>
-                                    <pre>Accept=application/json<br>Content-Type=application/json</pre>
+                                    <pre>Accept=*/*<br>Content-Type=application/json</pre>
                                     <h4>Content Body</h4>
                                     <pre>src/test/resources/testsData/addPost.json</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Date: Thu, 28 May 2026 23:01:02 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 87<br>Connection: keep-alive<br>access-control-allow-credentials: true<br>access-control-expose-headers: Location<br>Cache-Control: no-cache<br>etag: W/&quot;57-U3UlM6Oo41kf0stgVv30A2C3oN0&quot;<br>expires: -1<br>location: https://jsonplaceholder.typicode.com/posts//101<br>nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}<br>pragma: no-cache<br>report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=%2FGcnjBcBabaSG7165VGkep3Br6L6O5Z0h7IEvoYgbIY%3D&#92;0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&#92;0026ts=1780009262&quot;}],&quot;max_age&quot;:3600}<br>reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=%2FGcnjBcBabaSG7165VGkep3Br6L6O5Z0h7IEvoYgbIY%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1780009262&quot;<br>Server: cloudflare<br>vary: Origin, X-HTTP-Method-Override, Accept-Encoding<br>via: 2.0 heroku-router<br>x-content-type-options: nosniff<br>x-powered-by: Express<br>x-ratelimit-limit: 1000<br>x-ratelimit-remaining: 998<br>x-ratelimit-reset: 1780009284<br>cf-cache-status: DYNAMIC<br>CF-RAY: a030e1015c1e269b-PRG<br>alt-svc: h3=&quot;:443&quot;; ma=86400</pre>
+                                    <pre>Date: Fri, 29 May 2026 08:58:54 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 87<br>Connection: keep-alive<br>access-control-allow-credentials: true<br>access-control-expose-headers: Location<br>Cache-Control: no-cache<br>etag: W/&quot;57-U3UlM6Oo41kf0stgVv30A2C3oN0&quot;<br>expires: -1<br>location: https://jsonplaceholder.typicode.com/posts//101<br>nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}<br>pragma: no-cache<br>report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=05rryWAvhTMdI1VdBWNuXz7FBWE6h7VcIjlRYo6x00E%3D&#92;0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&#92;0026ts=1780045134&quot;}],&quot;max_age&quot;:3600}<br>reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=05rryWAvhTMdI1VdBWNuXz7FBWE6h7VcIjlRYo6x00E%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1780045134&quot;<br>Server: cloudflare<br>vary: Origin, X-HTTP-Method-Override, Accept-Encoding<br>via: 2.0 heroku-router<br>x-content-type-options: nosniff<br>x-powered-by: Express<br>x-ratelimit-limit: 1000<br>x-ratelimit-remaining: 994<br>x-ratelimit-reset: 1780045151<br>cf-cache-status: DYNAMIC<br>CF-RAY: a0344ccc4d3487f2-PRG<br>alt-svc: h3=&quot;:443&quot;; ma=86400</pre>
                                 <h4>Response Body</h4>
                                     <pre>{<br>    &quot;title&quot;: &quot;Test Post&quot;,<br>    &quot;body&quot;: &quot;This is a test body&quot;,<br>    &quot;userId&quot;: 1,<br>    &quot;id&quot;: 101<br>}</pre>
                             </div>
@@ -306,7 +315,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">006ms</span></td>
+                    <td width="100"><span class="nested-group-step">007ms</span></td>
                 </tr>
 
                             </table>
@@ -332,7 +341,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">007ms</span></td>
+                    <td width="100"><span class="top-level-step">006ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -354,7 +363,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">037ms</span></td>
+                    <td width="100"><span class="top-level-step">035ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -376,12 +385,12 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">016ms</span></td>
+                    <td width="100"><span class="top-level-step">022ms</span></td>
                 </tr>
             <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                 <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>0.51s</em></span></td>
+                <td width="100"><span class="top-level-step"><em>0.36s</em></span></td>
             </tr>
 
         </table>
