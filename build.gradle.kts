@@ -12,6 +12,10 @@ dependencies {
     testImplementation("net.serenity-bdd:serenity-rest-assured:5.3.10")
     testImplementation("net.serenity-bdd:serenity-junit5:5.3.10")
     testImplementation("org.junit.jupiter:junit-jupiter:6.1.0")
+    compileOnly("org.projectlombok:lombok:1.18.46")
+    annotationProcessor("org.projectlombok:lombok:1.18.46")
+    testCompileOnly("org.projectlombok:lombok:1.18.46")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.46")
 }
 
 tasks.test {
